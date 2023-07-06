@@ -1,6 +1,7 @@
 body {
   margin: 0%;
   font-family: "Montserrat", sans-serif;
+  zoom: 0.7;
 }
 
 h1 {
@@ -48,6 +49,7 @@ p {
 
 footer {
   margin-top: 15%;
+
 }
 
 hr.solid {
@@ -156,6 +158,14 @@ hr.solid {
   border-color: transparent;
 }
 
+.fixed-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 @media only screen and (max-width: 768px) {
   #btn-effect:hover {
     background-color: #777;
@@ -192,3 +202,33 @@ hr.solid {
     transform: rotate(360deg);
   }
 }
+
+.container-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.custom-form {
+  max-width: 800px; /* Ajusta el ancho máximo del formulario según tus necesidades */
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.custom-form input[type="text"],
+
+.custom-form textarea {
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-form input[type="file"] {
+  margin-bottom: 30px;
+}
+
